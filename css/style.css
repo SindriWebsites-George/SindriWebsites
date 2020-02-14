@@ -1,16 +1,116 @@
+:root {
+    --main-background: #454F3F;
+    --jumbotron-background: #34561D;
+    --navbar-background: #7D6B15;
+    --main-shadow: #556D46;
+}
+
 * {
-    margin: none;
-    padding: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    background-color: var(--main-background);
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 3px 7px 16px 5px rgba(69, 79, 63, 0);
+    box-shadow: inset 4px 4px 15px 0px #000000, 3px 7px 16px 5px rgba(69, 79, 63, 0);
+}
+
+#logo {
+    display: block;
+    background-color: var(--jumbotron-background);
+    width: 200px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 /* TODO Fill in blank rulesets. */
 
-#jumbotronMobile {}
+#headshot {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    width: 80%;
+    height: 150px;
+    border-radius: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-#jumbotronDesktop {}
 
-#jumbotronSubTitle {}
+/* Ruling that is the same for both desktop and mobile*/
+
+.jumbotronMobile {
+    background-color: var(--jumbotron-background);
+}
+
+.buttonHolder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jumbotronButton {
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 26px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: Trebuchet MS;
+    font-size: 12px;
+    padding: 5px 6px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.jumbotronButton:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+
+.jumbotronButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.navMobile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--navbar-background);
+    /* -webkit-box-shadow: 2px 11px 16px 5px rgba(69, 79, 63, 0.66);
+    box-shadow: 2px 11px 16px 5px rgba(69, 79, 63, 0.66); */
+}
+
+nav#navDesktop {
+    display: none;
+    -webkit-box-shadow: 0px 11px 7px 0px rgba(0, 0, 0, 0.81);
+    box-shadow: 0px 11px 7px 0px rgba(0, 0, 0, 0.81);
+}
+
+.navItem {
+    color: white;
+    text-decoration: none;
+}
+
+.jumbotronDesktop {
+    display: none;
+}
+
+.jumbotronSubTitle {
+    padding-top: .2em;
+    text-align: center;
+    color: white;
+}
 
 #jumbotronLogo {}
 
